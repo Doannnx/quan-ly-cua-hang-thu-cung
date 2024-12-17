@@ -1,0 +1,32 @@
+cd "C:\Program Files\MySQL\MySQL Server 8.0\bin"
+mysql.exe -u root -p
+
+source D:\code_v2\prepare_database.sql
+
+Oke roi day, test thu di
+
+okiiiii dder e mo them xem co gi em hoi sau nha 
+
+	ID 		        INT NOT NULL AUTO_INCREMENT,
+    ProductID       INT,
+	DateImport     	DATE,
+	Quantity        INT,
+
+
+
+PayFunction
+
+
+    bill_frame = tk.Frame(mainFrame, bd=3, relief=tk.RIDGE)
+    bill_frame.pack(side=tk.LEFT, padx=20)
+    bill_frame.place(x=280, y=140, width=470, height=330)
+
+    title_lbl2 = tk.Label(bill_frame, text="Bills", font=('Georgia', 20), bg='orange')
+    title_lbl2.pack(side=tk.TOP, fill=tk.X)
+
+    scroll_y2 = tk.Scrollbar(bill_frame, orient=tk.VERTICAL)
+    global bill_area
+    bill_area = tk.Text(bill_frame, bg="lightyellow", yscrollcommand=scroll_y2.set)
+    scroll_y2.pack(side=tk.RIGHT, fill=tk.Y)
+    scroll_y2.config(command=bill_area.yview)
+    bill_area.pack(fill=tk.BOTH, expand=1)
